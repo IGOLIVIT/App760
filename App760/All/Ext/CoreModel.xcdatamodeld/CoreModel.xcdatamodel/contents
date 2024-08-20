@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23B74" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="OrderModel" representedClassName="OrderModel" syncable="YES" codeGenerationType="class">
+        <attribute name="orDeadline" optional="YES" attributeType="String"/>
+        <attribute name="orDescr" optional="YES" attributeType="String"/>
+        <attribute name="orName" optional="YES" attributeType="String"/>
+        <attribute name="orPhoto" optional="YES" attributeType="String"/>
+        <attribute name="orPrice" optional="YES" attributeType="String"/>
+        <attribute name="orSize" optional="YES" attributeType="String"/>
+        <attribute name="orStatus" optional="YES" attributeType="String"/>
+        <attribute name="orTechnic" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="PainModel" representedClassName="PainModel" syncable="YES" codeGenerationType="class">
+        <attribute name="pDate" optional="YES" attributeType="String"/>
+        <attribute name="pDescr" optional="YES" attributeType="String"/>
+        <attribute name="pName" optional="YES" attributeType="String"/>
+        <attribute name="pPhoto1" optional="YES" attributeType="String"/>
+        <attribute name="pPhoto2" optional="YES" attributeType="String"/>
+        <attribute name="pPhoto3" optional="YES" attributeType="String"/>
+        <attribute name="pPrice" optional="YES" attributeType="String"/>
+        <attribute name="pSize" optional="YES" attributeType="String"/>
+        <attribute name="pStatus" optional="YES" attributeType="String"/>
+        <attribute name="pTechnic" optional="YES" attributeType="String"/>
+    </entity>
+</model>
