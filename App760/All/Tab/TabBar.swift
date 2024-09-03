@@ -56,4 +56,6 @@ enum Tab: String, CaseIterable {
                 
     case Settings = "Settings"
     
+    case Profile = "Profile"
+    
 }

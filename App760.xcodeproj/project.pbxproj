@@ -31,6 +31,9 @@
 		78640F8A2C74FEDF00E2F176 /* OrdersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78640F892C74FEDF00E2F176 /* OrdersViewModel.swift */; };
 		78640F8D2C74FF5E00E2F176 /* AddOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78640F8C2C74FF5E00E2F176 /* AddOrder.swift */; };
 		78640F902C75052100E2F176 /* OrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78640F8F2C75052100E2F176 /* OrderDetail.swift */; };
+		78A13E982C8736C200E7D8BC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A13E972C8736C200E7D8BC /* ProfileView.swift */; };
+		78A13E9A2C87370900E7D8BC /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A13E992C87370900E7D8BC /* ProfileViewModel.swift */; };
+		78A13E9D2C87371900E7D8BC /* AddProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A13E9C2C87371900E7D8BC /* AddProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,9 @@
 		78640F892C74FEDF00E2F176 /* OrdersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewModel.swift; sourceTree = "<group>"; };
 		78640F8C2C74FF5E00E2F176 /* AddOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrder.swift; sourceTree = "<group>"; };
 		78640F8F2C75052100E2F176 /* OrderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetail.swift; sourceTree = "<group>"; };
+		78A13E972C8736C200E7D8BC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		78A13E992C87370900E7D8BC /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		78A13E9C2C87371900E7D8BC /* AddProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,7 @@
 		78640F4D2C74B5D700E2F176 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				78A13E962C8736B500E7D8BC /* ProfileView */,
 				78640F552C74B61000E2F176 /* Settings */,
 				78640F542C74B60B00E2F176 /* Orders */,
 				78640F522C74B60000E2F176 /* Paintings */,
@@ -257,6 +264,24 @@
 			path = OrderDetail;
 			sourceTree = "<group>";
 		};
+		78A13E962C8736B500E7D8BC /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				78A13E9B2C87370E00E7D8BC /* AddProfile */,
+				78A13E972C8736C200E7D8BC /* ProfileView.swift */,
+				78A13E992C87370900E7D8BC /* ProfileViewModel.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		78A13E9B2C87370E00E7D8BC /* AddProfile */ = {
+			isa = PBXGroup;
+			children = (
+				78A13E9C2C87371900E7D8BC /* AddProfile.swift */,
+			);
+			path = AddProfile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -333,6 +358,7 @@
 				78640F852C74EF4E00E2F176 /* AddPaint.swift in Sources */,
 				78640F8D2C74FF5E00E2F176 /* AddOrder.swift in Sources */,
 				78640F612C74B63400E2F176 /* R1.swift in Sources */,
+				78A13E9D2C87371900E7D8BC /* AddProfile.swift in Sources */,
 				78640F3D2C74B58800E2F176 /* ContentView.swift in Sources */,
 				78640F5F2C74B62F00E2F176 /* Not.swift in Sources */,
 				78640F5D2C74B62A00E2F176 /* Reviews.swift in Sources */,
@@ -343,11 +369,13 @@
 				78640F6F2C74B65F00E2F176 /* SettingsView.swift in Sources */,
 				78640F8A2C74FEDF00E2F176 /* OrdersViewModel.swift in Sources */,
 				78640F692C74B64B00E2F176 /* Array.swift in Sources */,
+				78A13E9A2C87370900E7D8BC /* ProfileViewModel.swift in Sources */,
 				78640F6D2C74B65800E2F176 /* OrdersView.swift in Sources */,
 				78640F5B2C74B62400E2F176 /* U1.swift in Sources */,
 				78640F3B2C74B58800E2F176 /* App760App.swift in Sources */,
 				78640F882C74F42A00E2F176 /* PaiintDetail.swift in Sources */,
 				78640F592C74B61E00E2F176 /* LoadingView.swift in Sources */,
+				78A13E982C8736C200E7D8BC /* ProfileView.swift in Sources */,
 				78640F632C74B63900E2F176 /* R2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

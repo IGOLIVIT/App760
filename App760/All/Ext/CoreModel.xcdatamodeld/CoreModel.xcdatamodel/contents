@@ -22,4 +22,8 @@
         <attribute name="pStatus" optional="YES" attributeType="String"/>
         <attribute name="pTechnic" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="ProfModel" representedClassName="ProfModel" syncable="YES" codeGenerationType="class">
+        <attribute name="prCost" optional="YES" attributeType="String"/>
+        <attribute name="prName" optional="YES" attributeType="String"/>
+    </entity>
 </model>

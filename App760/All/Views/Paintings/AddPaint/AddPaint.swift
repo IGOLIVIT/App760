@@ -58,10 +58,12 @@ struct AddPaint: View {
                         } else if viewModel.currForAddStatus == "Sold" {
                             
                             viewModel.sol += 1
+                            viewModel.profit += Int(viewModel.pPrice) ?? 0
                             
                         } else if viewModel.currForAddStatus == "To order" {
                             
                             viewModel.ord += 1
+                            
                         }
                         
                         viewModel.addPaint()

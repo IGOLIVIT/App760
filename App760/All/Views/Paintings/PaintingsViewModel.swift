@@ -14,6 +14,9 @@ final class PaintingsViewModel: ObservableObject {
     @Published var currFilStatus = "Available"
     @Published var currForAddStatus = "Available"
     
+    @AppStorage("profit") var profit: Int = 0
+    @AppStorage("expenses") var expenses: Int = 0
+    
     @AppStorage("av") var av: Int = 0
     @AppStorage("sol") var sol: Int = 0
     @AppStorage("ord") var ord: Int = 0

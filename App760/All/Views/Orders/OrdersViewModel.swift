@@ -15,6 +15,9 @@ final class OrdersViewModel: ObservableObject {
     @Published var currFilStatus = "In process"
     @Published var currForAddStatus = "In process"
     
+    @AppStorage("profit") var profit: Int = 0
+    @AppStorage("expenses") var expenses: Int = 0
+    
     @AppStorage("av") var av: Int = 0
     @AppStorage("sol") var sol: Int = 0
     @AppStorage("ord") var ord: Int = 0

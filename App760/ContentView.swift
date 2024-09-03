@@ -40,6 +40,9 @@ struct ContentView: View {
                         SettingsView()
                             .tag(Tab.Settings)
                         
+                        ProfileView()
+                            .tag(Tab.Profile)
+                        
                     })
                     
                 TabBar(selectedTab: $current_tab)
