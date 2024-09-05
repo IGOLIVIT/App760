@@ -50,6 +50,11 @@ struct AddProfile: View {
                         viewModel.Age = viewModel.addAge
                         viewModel.experience = viewModel.addExp
                         viewModel.education = viewModel.addEduc
+
+                        withAnimation(.spring()) {
+                            
+                            viewModel.isProfile = false
+                        }
                                                 
                     }, label: {
                         

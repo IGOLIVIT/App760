@@ -35,13 +35,40 @@ struct ProfileView: View {
                 
                 if viewModel.profName.isEmpty || viewModel.profPhoto.isEmpty {
                 
+                    VStack {
+                        
+                        Text("Information about the artist has not been added")
+                            .foregroundColor(.white)
+                            .font(.system(size: 15, weight: .medium))
+                            .multilineTextAlignment(.center)
+                        
+                        Button(action: {}, label: {
+                            
+                            HStack {
+                                
+                                Text("Add +")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 16, weight: .medium))
+                                    .frame(maxWidth: .infinity)
+                                    .frame(height: 50)
+                                    .background(RoundedRectangle(cornerRadius: 15).fill(Color("prim")))
+                            }
+                        })
+                        
+                    }
+                    .padding(25)
+                    .frame(maxWidth: .infinity)
+                    .background(RoundedRectangle(cornerRadius: 15).fill(Color("bg2")))
+
+                } else {
+                    
                 HStack {
                     
                     Image(viewModel.profPhoto)
                         .resizable()
                         .frame(width: 90, height: 90)
                     
-                    VStack(alignment: .leading, spacing: 8) {
+                    VStack(alignment: .leading, spacing: 4) {
                         
                         HStack {
                             
@@ -80,38 +107,14 @@ struct ProfileView: View {
                             .foregroundColor(.gray)
                             .font(.system(size: 12, weight: .regular))
                     }
+                    .padding(.vertical)
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
                 .frame(height: 120)
                 .background(RoundedRectangle(cornerRadius: 15).fill(Color("bg2")))
                 
-                } else {
-                    
-                    VStack {
-                        
-                        Text("Information about the artist has not been added")
-                            .foregroundColor(.white)
-                            .font(.system(size: 15, weight: .medium))
-                            .multilineTextAlignment(.center)
-                        
-                        Button(action: {}, label: {
-                            
-                            HStack {
-                                
-                                Text("Add +")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 16, weight: .medium))
-                                    .frame(maxWidth: .infinity)
-                                    .frame(height: 50)
-                                    .background(RoundedRectangle(cornerRadius: 15).fill(Color("prim")))
-                            }
-                        })
-                        
-                    }
-                    .padding(25)
-                    .frame(maxWidth: .infinity)
-                    .background(RoundedRectangle(cornerRadius: 15).fill(Color("bg2")))
+
                 }
                 
                 HStack {
@@ -371,6 +374,10 @@ struct ProfileView: View {
             
             viewModel.fetchLists()
         }
+        .sheet(isPresented: $viewModel.isProfile, content: {
+            
+            AddProfile(viewModel: viewModel)
+        })
     }
 }
 
